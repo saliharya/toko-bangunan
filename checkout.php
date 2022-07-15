@@ -49,7 +49,7 @@ fclose($fp);
     <div class="flex justify-center items-center h-full">
       <div class="text-dark">
         <h2 class="font-semibold text-4xl mb-4">Successfully</h2>
-        <h4 class="font-semibold text-xl mb-6">Purchased</h4>
+        <h4 class="font-semibold text-xl mb-6">Ordered</h4>
         <a class="inline-block px-7 py-3 mb-1 border-2 border-primary text-primary font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="./index.html" role="button">Back To Home</a>
         <a class="inline-block px-7 py-3 mb-1 border-2 border-primary text-primary font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="./lihat.php" role="button">Purchase History</a>
       </div>

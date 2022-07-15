@@ -10,8 +10,8 @@
 <body>
     <div class="flex justify-center items-center">
       <div class="text-dark text-center">
-        <h2 class="font-semibold text-4xl mb-4">Purchase</h2>
-        <h4 class="font-semibold text-xl mb-6">History</h4>
+        <h2 class="font-semibold text-4xl mb-4">Order</h2>
+        <h4 class="font-semibold text-xl mb-6">Queue</h4>
         <a class="inline-block px-7 py-3 mb-6 border-2 border-primary text-primary font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="./index.html" role="button">Back To Home</a>
       </div>
     </div>
