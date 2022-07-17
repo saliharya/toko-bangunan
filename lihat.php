@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Purchase History</title>
-  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex justify-center items-center">
-      <div class="text-dark text-center">
-        <h2 class="font-semibold text-4xl mb-4">Order</h2>
-        <h4 class="font-semibold text-xl mb-6">Queue</h4>
-        <a class="inline-block px-7 py-3 mb-6 border-2 border-primary text-primary font-medium text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" href="./index.html" role="button">Back To Home</a>
+    <div class="style1">
+      <div class="style2">
+        <h2 class="style3">Order</h2>
+        <h4 class="style4">Queue</h4>
+        <a class="style5" href="./index.html" role="button">Back To Home</a>
       </div>
     </div>
 </div>
@@ -22,8 +22,7 @@
 <?php
 echo "<center>";
 $fp = fopen("struk.txt", "r");
-echo "<table border=1 >";
-
+echo "<table style-table>";
 echo "<tr>
     <th>No</th>
     <th>Date</th>
