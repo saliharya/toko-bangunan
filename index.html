@@ -24,22 +24,37 @@
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
                     <nav id="nav-menu"
-                        class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        class="hidden absolute py-5 bg-white shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
                                 <a href="#list-product"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">List Product</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">List Product</a>
                             </li>
                             <li class="group">
                                 <a href="#checkout"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Cart</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Cart</a>
                             </li>
                             <li class="group">
-                                <a href="lihat.php" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Order Queue</a>
+                                <a href="lihat.php"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Order Queue</a>
+                            </li>
+                            <li class="flex items-center pl-8 mt-3">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Ligt</span>
+                                    <input type="checkbox" name="dark-toggle" id="dark-toggle" class="hidden">
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full p-1 bg-slate-500">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -50,21 +65,22 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl">Welcome! 👋, <span
-                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">To Arya Toko</span>
+                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">To Arya Toko</span>
                     </h1>
-                    <h2 class="font-medium text-secondary text-lg mb-2 lg:text-2xl">Building Shop </h2>
-                    <p class="text-400 mb-5 leading-relaxed">With Competitive Product Quality</p>
+                    <h2 class="font-medium text-secondary text-lg mb-2 lg:text-2xl dark:text-white">Building Shop </h2>
+                    <p class="text-400 mb-5 leading-relaxed dark:text-white">With Competitive Product Quality</p>
                     <a href="#list-product"
-                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition duration-200 ease-in-out">Browse Items</a>
+                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition duration-200 ease-in-out">Browse
+                        Items</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10 lg:mt-0 lg:right-0">
-                        <img src="./dist/img/building.png" alt="pizza-tower" class="max-w-full mx-auto">
+                        <img src="./dist/img/building.png" alt="pizza-tower" class="max-w-full mx-auto dark:invert">
                     </div>
                 </div>
             </div>
@@ -73,17 +89,17 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl">AryaToko</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-3 max-w-md lg:text-4xl dark:text-white">AryaToko</h2>
                     <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Welcome to AryaToko, we sell a
                         variety of building materials at competitive prices and quality</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Seller Contact</h3>
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Seller Contact</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">If you want to know more, please
                         click
                         social media links below</p>
@@ -142,7 +158,7 @@
 
     <!-- Product List Section Start -->
     <form name="form1" action="checkout.php" onsubmit="return validateForm()" method="post">
-        <section id="list-product" class="pt-36 pb-32 bg-slate-700">
+        <section id="list-product" class="pt-36 pb-32 bg-slate-700 dark:bg-slate-500">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="mx-auto text-center mb-16">
@@ -156,96 +172,96 @@
                     <div class="flex flex-wrap justify-center">
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="bathtub" class="text-4xl text-primary font-bold">Bathtub</label>
-                            <p class="text-base text-primary font-bold">Rp. 2.400.000 / item</p>
+                            <label for="bathtub" class="text-4xl text-primary font-bold dark:text-dark">Bathtub</label>
+                            <p class="text-base text-primary font-bold dark:text-dark">Rp. 2.400.000 / item</p>
                             <img src="./dist/img/bathtub2.png" alt="bathtub" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="bathtub" name="bathtub" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="brick" class="text-4xl text-primary font-bold">Brick</label>
-                            <p class="text-xl text-primary font-bold">Rp. 1.000 / item</p>
+                            <label for="brick" class="text-4xl text-primary font-bold dark:text-dark">Brick</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 1.000 / item</p>
                             <img src="./dist/img/brick2.png" alt="brick" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="brick" name="brick" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="cement" class="text-4xl text-primary font-bold">Cement</label>
-                            <p class="text-xl text-primary font-bold">Rp. 35.000 / bag</p>
+                            <label for="cement" class="text-4xl text-primary font-bold dark:text-dark">Cement</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 35.000 / bag</p>
                             <img src="./dist/img/cement2.png" alt="cement" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="cement" name="cement" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="ceramic" class="text-4xl text-primary font-bold">Ceramic</label>
-                            <p class="text-xl text-primary font-bold">Rp. 40.000 / item</p>
+                            <label for="ceramic" class="text-4xl text-primary font-bold dark:text-dark">Ceramic</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 40.000 / item</p>
                             <img src="./dist/img/ceramic2.png" alt="ceramic" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="ceramic" name="ceramic" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="door" class="text-4xl text-primary font-bold">Door</label>
-                            <p class="text-xl text-primary font-bold">Rp. 2.000.000 / set</p>
+                            <label for="door" class="text-4xl text-primary font-bold dark:text-dark">Door</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 2.000.000 / set</p>
                             <img src="./dist/img/door2.png" alt="door" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="door" name="door" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="lamp" class="text-4xl text-primary font-bold">Lamp</label>
-                            <p class="text-xl text-primary font-bold">Rp. 2.000.000 / item</p>
+                            <label for="lamp" class="text-4xl text-primary font-bold dark:text-dark">Lamp</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 2.000.000 / item</p>
                             <img src="./dist/img/lamp2.png" alt="lamp" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="lamp" name="lamp" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="nail" class="text-4xl text-primary font-bold">Nail</label>
-                            <p class="text-xl text-primary font-bold">Rp. 300 / item</p>
+                            <label for="nail" class="text-4xl text-primary font-bold dark:text-dark">Nail</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 300 / item</p>
                             <img src="./dist/img/nail2.png" alt="nail" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="nail" name="nail" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="roof" class="text-4xl text-primary font-bold">Roof</label>
-                            <p class="text-xl text-primary font-bold">Rp. 1.500 / item</p>
+                            <label for="roof" class="text-4xl text-primary font-bold dark:text-dark">Roof</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 1.500 / item</p>
                             <img src="./dist/img/roof2.png" alt="roof" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="roof" name="roof" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="sand" class="text-4xl text-primary font-bold">Sand</label>
-                            <p class="text-xl text-primary font-bold">Rp. 500.000 / PickUp</p>
+                            <label for="sand" class="text-4xl text-primary font-bold dark:text-dark">Sand</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 500.000 / PickUp</p>
                             <img src="./dist/img/sand2.png" alt="sand" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="sand" name="sand" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="toilet" class="text-4xl text-primary font-bold">Toilet</label>
-                            <p class="text-xl text-primary font-bold">Rp. 1.200.000 / item</p>
+                            <label for="toilet" class="text-4xl text-primary font-bold dark:text-dark">Toilet</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 1.200.000 / item</p>
                             <img src="./dist/img/toilet2.png" alt="toilet" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="toilet" name="toilet" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="wastafel" class="text-4xl text-primary font-bold">Wastafel</label>
-                            <p class="text-xl text-primary font-bold">Rp. 500.000 / item</p>
+                            <label for="wastafel" class="text-4xl text-primary font-bold dark:text-dark">Wastafel</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 500.000 / item</p>
                             <img src="./dist/img/wastafel2.png" alt="wastafel" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="wastafel" name="wastafel" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="window" class="text-4xl text-primary font-bold">Window</label>
-                            <p class="text-xl text-primary font-bold">Rp. 100.000 / item</p>
+                            <label for="window" class="text-4xl text-primary font-bold dark:text-dark">Window</label>
+                            <p class="text-xl text-primary font-bold dark:text-dark">Rp. 100.000 / item</p>
                             <img src="./dist/img/window2.png" alt="window" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="window" name="window" placeholder="quantity"
                                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus: border-primary">
@@ -257,12 +273,12 @@
         <!-- Product List Section End -->
 
         <!-- checkout Section Start -->
-        <section id="checkout" class="pt-36 pb-32">
+        <section id="checkout" class="pt-36 pb-32 dark:bg-slate-800">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="font-semibold text-lg text-primary mb-2">Cart</h4>
-                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Items</h2>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Items</h2>
                         <p class=" font-medium text-md text-secondary md:text-lg">Add Item To Cart</p>
                     </div>
                 </div>

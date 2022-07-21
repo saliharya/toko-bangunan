@@ -1,5 +1,6 @@
 module.exports = {
   content: ['index.html','checkout.php'],
+  darkMode: 'class',
   theme: {
     container:{
       center:true,

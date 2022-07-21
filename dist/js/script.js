@@ -17,6 +17,13 @@ hamburger.addEventListener('click', function() {
     navMenu.classList.toggle('hidden');
 });
 
+window.addEventListener('click', function (e) {
+    if (e.target != hamburger && e.target != navMenu) {
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+})
+
 const name = document.querySelector('#name')
 const email = document.querySelector('#email')
 const adress = document.querySelector('#adress')
@@ -35,3 +42,15 @@ function validateForm() {
         return false
     }
 }
+
+const darkToggle = document.querySelector('#dark-toggle')
+const html = document.querySelector('html')
+
+darkToggle.addEventListener('click', function(){
+    if (darkToggle.checked) {
+        html.classList.add('dark')
+    }
+    else {
+        html.classList.remove('dark')
+    }
+})
