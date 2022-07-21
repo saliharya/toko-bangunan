@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Bangunan</title>
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./dist/css/final.css">
+    <script>if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }</script>
 </head>
 
 <body>
@@ -32,7 +37,8 @@
                             </li>
                             <li class="group">
                                 <a href="#list-product"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">List Product</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">List
+                                    Product</a>
                             </li>
                             <li class="group">
                                 <a href="#checkout"
@@ -40,16 +46,18 @@
                             </li>
                             <li class="group">
                                 <a href="lihat.php"
-                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Order Queue</a>
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Order
+                                    Queue</a>
                             </li>
-                            <li class="flex items-center pl-8 mt-3">
+                            <li class="flex items-center pl-8 mt-3 lg:mt-0">
                                 <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500">Ligt</span>
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
                                     <input type="checkbox" name="dark-toggle" id="dark-toggle" class="hidden">
                                     <label for="dark-toggle">
-                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full p-1 bg-slate-500">
-                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
-
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full p-1 bg-slate-500">
+                                            <div
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
                                             </div>
                                         </div>
                                     </label>
@@ -70,7 +78,8 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl">Welcome! 👋, <span
-                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">To Arya Toko</span>
+                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">To Arya
+                            Toko</span>
                     </h1>
                     <h2 class="font-medium text-secondary text-lg mb-2 lg:text-2xl dark:text-white">Building Shop </h2>
                     <p class="text-400 mb-5 leading-relaxed dark:text-white">With Competitive Product Quality</p>
@@ -99,7 +108,8 @@
                         variety of building materials at competitive prices and quality</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Seller Contact</h3>
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Seller
+                        Contact</h3>
                     <p class="font-medium text-base text-secondary mb-6 lg:text-lg">If you want to know more, please
                         click
                         social media links below</p>
@@ -252,7 +262,8 @@
                         </div>
                         <div
                             class="mx-8 py-8 text-center grayscale opacity-80 transition duration-500 hover:grayscale-0 hover:opacity-100">
-                            <label for="wastafel" class="text-4xl text-primary font-bold dark:text-dark">Wastafel</label>
+                            <label for="wastafel"
+                                class="text-4xl text-primary font-bold dark:text-dark">Wastafel</label>
                             <p class="text-xl text-primary font-bold dark:text-dark">Rp. 500.000 / item</p>
                             <img src="./dist/img/wastafel2.png" alt="wastafel" class="w-48 h-48 pt-4 pb-4 m-auto" />
                             <input type="number" id="wastafel" name="wastafel" placeholder="quantity"
